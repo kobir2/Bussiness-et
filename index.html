@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business</title>
+
+    <style>
+
+        /* global css */
+
+            *{
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                text-decoration: none;
+               
+
+            }
+
+            body{
+            background: #ccc;
+             }
+
+            table{
+                border: 0;
+                border-spacing: 0;
+            }
+            h1,h2,h3,h4,h5,h6{
+                font-family: 'Nunito Sans', sans-serif;
+                color: #000000;
+                margin-top: 0;
+            }
+
+            a{
+                color: #000;
+            }
+
+
+                /* color */
+                    .bg_primary{
+                        background: #0000ff;
+                    }
+                    .bg_white{
+                        background: #ffffff;
+                    }
+                    .bg_light{
+                        background: #fafafa;
+                    }
+                    .bg_black{
+                        background: #000000;
+                    }
+                    .bg_dark{
+                        background: rgba(0,0,0,.8);
+                    }
+
+                /* padding */
+                    .email-section{
+                        padding:2.5em;
+                    }
+
+                    .email-section2{
+                        padding: 1.5rem;
+                    }
+
+            
+                /* buttion */
+
+                    .btn{
+                        padding: 10px 15px;
+                        display: inline-block;
+                }
+
+                .btn-primary {
+                    border-radius: 5px;
+                    background: #0000ff;
+                    color: #ffffff;
+                }
+
+                .btn.btn-yeallow {
+                    border-radius: 5px;
+                    background: #f1c638;
+                    color: #000;
+                }
+
+                .btn.btn-white{
+                    border-radius: 5px;
+                    background: #ffffff;
+                    color: #000000;
+                }
+                .btn.btn-white-outline{
+                    border-radius: 5px;
+                    background: transparent;
+                    border: 1px solid #fff;
+                    color: #fff;
+                }
+                .btn.btn-black{
+                    border-radius: 5px;
+                    background: #000;
+                    color: #fff;
+                    transition: 1s;
+                }
+
+                     /* btn hover */
+
+                     .btn-black:hover{
+                            background: #3b12e3;
+
+                        }
+                    /* btn hover */
+                    .title{
+                        text-align: center;
+                    }
+                    .title h3 {
+                        font-size: 28px;
+                        font-weight: 400;
+                        line-height: 1.5;
+                        margin-bottom: 20px;
+                    }
+
+                    .title p {
+                        line-height: 1.5;
+                    }
+                        /* header section start */
+
+                    .logo a{
+                        font-size: 20px;
+                        font-weight: bold;
+                    }
+
+                    .logo a:hover{
+                        color: #0c0c10;
+                        font-weight: 400;
+                    }
+
+                       /* menu */
+
+                       .menu {
+                           float: right;
+                       }
+                       .menu  li{
+                           display: inline-block;
+                           margin: 0 10px;
+                       }
+                        .menu ul li a:hover{
+                            color: #000;
+                        }
+
+                /* header section end*/
+
+                /* service section start */
+
+                        
+                    .service-content{
+                        text-align: center;
+                        margin-bottom: 20px;
+                    }
+                    .service-content h3{
+                        margin: 15px 0;
+                    }
+
+                /* service section end */
+
+
+                /* bussiness section start */
+
+                    .bussiness-content{
+                        
+                    }
+                    .bussiness-content h2{
+                        
+                        line-height: 1.4;
+                        font-size: 20px;
+                    }
+
+                    .bussiness-content p{
+                        line-height: 1.3;
+                        margin: 10px 0;
+                    }
+
+                    .bussiness-content a{
+                        color: #000;
+                        transition: 1s;
+                    }
+
+                    .bussiness-content a:hover{
+                        color: #c06d33;
+                    }
+                /* bussiness section end */
+
+
+
+                /* project section start */
+
+                    .p-img{
+                        position: relative;
+                        overflow: hidden;
+                    }
+
+                    .p-img-content{
+                        bottom: 10%;
+                        position: absolute;
+                        text-align: center;
+                        width: 100%;
+                        height: auto;
+                        opacity: 0;
+                        transition: transform 1s;
+                        background: rgba(0,0,0,.5);
+                    }
+                    .p-img-content h3{
+                        color: #fff;
+                        margin-top: 20px;
+                    }
+                    .p-img-content p{
+                        color: #fff;
+                    }
+                    .p-img-content:hover{
+                        transform: translateY(-10);
+                        opacity: 1;
+                        cursor: pointer;
+                    }
+                /* project section end */
+            
+        /* media quary  start*/
+
+            @media only screen and (max-width: 600px) {
+
+                table[class="responsive-table"] {
+                    width: 100% !important;
+                }
+                table[class="responsive-table2"] {
+                    width: 100% !important;
+
+                }
+
+                td[class="two-column"]{
+                    display: block;
+                    width: 100%;
+                }
+                /* header */
+
+                    .logo{
+                        text-align: center;
+                    }
+
+                    .menu {
+                        text-align: center;
+                    }
+                /* services */
+
+                /* bussiness  */
+
+                .bussiness-content{
+                     text-align: center;   
+                }
+
+
+
+                /* project */
+
+                .p-img {
+                    position: relative;
+                    overflow: hidden;
+                    margin-bottom: 20px;
+                }
+            }
+        /* media  quary  end*/
+
+    </style>
+</head>
+<body>
+    
+    <!-- full width start -->
+
+        <table  cellpadding="0" cellspacing="0" width="100%" border="0" style="table-layout: fixed;max-width:100% !important;width: 100% !important;min-width: 100% !important;">
+            <tr>
+                <td align="center">
+                    <!-- email body section  -->
+                    <table class="responsive-table"  cellpadding="0" cellspacing="0" width="600" style="background: #fff;" class="bg_white" >
+                        <!-- header section start -->
+
+                            <tr>
+                                <td>
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="padding: 1rem 2.5rem;">
+                                        <tr>
+                                            <td class="two-column" width="30%">
+                                                <h3 class="logo"><a href="#">Business</a></h3>
+                                            </td>
+                                            <td class="two-column" width="70%">
+                                                <ul class="menu">
+                                                    <li>
+                                                        <a href="#">Home</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">About</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Contact</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Blog</a>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+
+                        <!-- header section end -->
+
+                        <!-- hero section start -->
+
+                            <tr>
+                                <td>
+                                    <table cellpadding="0" cellspacing="0" width="100%" border="0"> 
+                                        <tr>
+                                            <td class="two-column" width="50%">
+                                                <img src="./images/bg_1.jpg" alt="" style="width: 100%;display: block;">
+                                            </td>
+                                            <td class="two-column" width="50%" valign="middle" style="background: #f1c638;"> 
+                                                <table cellpadding="0" cellspacing="0" width="100%" border="0">
+                                                    <tr>
+                                                        <td class="email-section2">
+                                                            <h3 style="font-size: 32px;font-weight: 200;">We're Email Template Builder</h3>
+                                                            <p style="margin: 20px 0;">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                                                            <a href="#" class="btn btn-black">Shop Now</a>
+                                                        </td>
+                                                     </tr>
+                                                </table>
+                                            </td>
+
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        <!-- hero section start -->
+
+                        <!-- service section start  -->
+
+                           <tr>
+                               <td class="email-section">
+                                   <!-- title -->
+
+                                        <table width="100%" cellpadding="0" cellspeacing="0" border="0">
+                                             <tr>
+                                                 <td class="title email-section">
+                                                     <h3>Our Services</h3>
+                                                     <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+
+                                                 </td>
+                                             </tr>   
+
+                                        </table>
+
+                                        <!-- services content -->
+
+                                            <table border="0" cellpadding="0" cellspeacing="0"  width="100%"> 
+                                                <tr>
+                                                    <td class="two-column" valign="top" width="50%" style="margin-bottom: 20px;">
+                                                        <table  border="0" cellpadding="0" cellspeacing="0"  width="100%">
+                                                            <tr>
+                                                                <td class="service-content">
+                                                                    <img src="./images/001-diet.png" alt="WEB DESIGN" style="width: 50px;display: block;margin: 0 auto;">
+                                                                    <h3>Web Design</h3>
+                                                                    Far far away, behind the word mountains, far from the countries
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                    <td class="two-column" valign="top" width="50%" style="margin-bottom: 20px;">
+                                                        <table  border="0" cellpadding="0" cellspeacing="0"  width="100%">
+                                                            <tr>
+                                                                <td class="service-content">
+                                                                    <img src="./images/003-recipe-book.png" alt="WEB DESIGN" style="width: 50px;display: block;margin: 0 auto;">
+                                                                    <h3>Web Devlopment</h3>
+                                                                    Far far away, behind the word mountains, far from the countries
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                               </td>
+                           </tr>
+                        <!-- service section end -->
+
+                        <!-- bussiness section start-->
+                           <tr>
+                               <td class="email-section" style="background: #f1c638;">
+                                   <table cellpadding="0" cellspeacing="0" border="0" width="100%">
+                                        <tr>
+                                            <td class="two-column" width="50%"> 
+                                                <img src="./images/about.jpg" alt="" width="100%" style="display: block;">
+                                            </td>
+                                            <td class="two-column" valign="middle" width="50%"> 
+                                                <table cellpadding="0" cellspeacing="0" border="0" width="100%">
+                                                    <tr>
+                                                        <td class="email-section2 bussiness-content"> 
+                                                            <h2>Business Strategy</h2>
+                                                             <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                                                             <a href="#">Read More</a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                   </table>
+                               </td>
+                           </tr>
+                        <!-- bussiness section end -->
+
+                        <!-- project section start -->
+
+                           <tr>
+                               <td>
+                                   <!-- project title -->
+
+                                        <table border="0" cellpadding="0" cellspeacing="0" width="100%">
+                                            <tr>
+                                                 <td valign="top" class="title email-section">
+                                                    <h3>Our Projects</h3>
+                                                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+       
+                                                </td>
+                                            </tr>  
+                                        </table>
+
+                                
+                                        <!-- project content -->
+
+                                       <table border="0" cellspeacing="0" cellpadding="0" class="email-section" width="100%">
+                                           <tr> 
+                                               <td valign="top" class="two-column" width="50%">
+                                                    <div class="p-img">
+                                                        <img src="./images/work-1.jpg" alt="" width="100%" style="display: block;width: 100%;">
+                                                        <div class="p-img-content">
+                                                            <h3>class Room</h3>
+                                                            <p>
+                                                                this is our class room 
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                               </td>
+
+                                               <td  valign="top"class="two-column" width="50%">
+                                                <div class="p-img">
+                                                    <img src="./images/work-2.jpg" alt="" width="100%" style="display: block; width: 100%;">
+                                                    <div class="p-img-content">
+                                                        <h3>Workplace</h3>
+                                                        <p>
+                                                            this is ourwork place
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                </td>
+                                           </tr>
+
+                                           <tr> 
+                                            <td valign="top" class="two-column" width="50%">
+                                                 <div class="p-img">
+                                                     <img src="./images/work-3.jpg" alt="" width="100%" style="display: block;width: 100%;">
+                                                     <div class="p-img-content">
+                                                         <h3>Modern Design</h3>
+                                                         <p>
+                                                             this is mordern designm 
+                                                         </p>
+                                                     </div>
+                                                 </div>
+                                            </td>
+
+                                            <td valign="top" class="two-column" width="50%">
+                                             <div class="p-img">
+                                                 <img src="./images/work-4.jpg" alt="" width="100%" style="display: block;width: 100%;">
+                                                 <div class="p-img-content">
+                                                     <h3>Work Hour</h3>
+                                                     <p>
+                                                         this is our class room 
+                                                     </p>
+                                                 </div>
+                                             </div>
+                                             </td>
+                                        </tr>
+                                    </table>
+                               </td>
+                           </tr>
+
+                        <!-- project section end -->
+
+                        <!-- conter section start -->
+
+                           <tr>
+                               <td>
+                                   <table width="100%" cellpadding="0" cellspeacing="0" border="0">
+                                        <tr>
+                                            <td class="two-column" width="33.33%" valign="middle" style="text-align: center;padding: 1.5rem 0;background: rgba(241,198,56,.9);">
+                                                <h4>20</h4>
+                                                <p>Client</p>
+                                            </td>
+                                            <td class="two-column" width="33.33%" valign="middle" style="text-align: center;padding: 1.5rem 0;background: rgba(241,198,56,1);">
+                                                <h4>12000</h4>
+                                                <p>Projects</p>
+                                            </td>
+                                            <td class="two-column" width="33.33%" valign="middle" style="text-align: center;padding: 1.5rem 0;background: rgba(241,198,56,.8);">
+                                               <h4>100</h4>
+                                               <p>Staff</p>
+                                            </td>
+                                        </tr>
+                                   </table>
+                               </td>
+                           </tr>
+                           
+                        <!-- conter section start -->
+
+                        <!-- blog section start -->
+
+                           <tr>
+                               <td>
+                                   <!--Blog title -->
+
+                                   <table border="0" cellpadding="0" cellspeacing="0" width="100%">
+                                    <tr>
+                                         <td valign="top" class="title email-section">
+                                            <h3>Our Projects</h3>
+                                            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+
+                                        </td>
+                                    </tr>  
+                                </table>
+
+                                <!-- blog content -->
+
+                                    <table border="0" cellpadding="0" cellspeacing="0" width="100%">
+                                        <tr>
+                                            <td valign="middle" class="two-column" width="50%" style="">
+                                                <table border="0" cellpadding="0" cellspeacing="0" width="100%">
+                                                    <tr>
+                                                        <td class="email-section2" style="">
+                                                            <img src="./images/blog-1.jpg" alt="" style="width:100%;">
+                                                            <h4 style="margin: 10px 0;">Business Key to Success</h3>
+                                                            <h4>POSTED ON FEB 18, 2019 FOOD</h4>
+                                                            <p style="margin: 20px 0;">Far far away, behind the word mountains, far from the countries</p>
+                                                            <a href="#" class="btn btn-yeallow">Read more</a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                            <td valign="middle" class="two-column" width="50%" style="">
+                                                <table border="0" cellpadding="0" cellspeacing="0" width="100%">
+                                                    <tr>
+                                                        <td class="email-section2" style="">
+                                                            <img src="./images/blog-2.jpg" alt="" style="width:100%;">
+                                                            <h4 style="margin: 10px 0;">Business Key to Success</h3>
+                                                            <h4>POSTED ON FEB 18, 2019 FOOD</h4>
+                                                            <p style="margin: 20px 0;">Far far away, behind the word mountains, far from the countries</p>
+                                                            <a href="#" class="btn btn-yeallow">Read more</a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                               </td>
+                           </tr>
+
+                        <!-- blog section end -->
+
+                        <!-- team section start -->
+
+                           <tr>
+                               <td style="background: #fafafa;">
+
+                                <!-- team title -->
+                                    <table border="0" cellpadding="0" cellspeacing="0" width="100%">
+                                        <tr>
+                                            <td valign="top" class="title email-section">
+                                                <h3>Our Team</h3>
+                                                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+
+                                            </td>
+                                        </tr>  
+                                    </table>
+
+                                <!-- team title -->
+
+                                <!-- team content -->
+
+                                    <table width="100%" cellpadding="0" cellspeacing="0" border="0" class="email-section">
+                                        <tr>
+                                            <td  class="two-column" width="50%" style="text-align: center;">
+                                                <img src="./images/person_1.jpg" alt="" width="75px" style="display: block;width: 75px;border-radius: 50%;margin: 0 auto;">
+                                                <h3 style="margin: 10px 0;">Ronald Tuff</h3>
+                                                <p style="margin-bottom: 10px;">Businessman</p>
+                                                <p>Far far away, behind the word mountains</p>
+                                            </td>
+                                            <td  class="two-column" width="50%"  style="text-align: center;">
+                                                <img src="./images/person_2.jpg" alt="" width="75px" style="display: block;width: 75px;border-radius: 50%;margin: 0 auto;">
+                                                <h3 style="margin: 10px 0;">Ronald Tuff</h3>
+                                                <p style="margin-bottom: 10px;">Businessman</p>
+                                                <p>Far far away, behind the word mountains</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+
+                                    <!-- team content -->
+                               </td>
+                           </tr>
+                        <!-- team section end -->
+
+
+                        <!-- price section start -->
+
+
+                           <tr>
+                               <td>
+                                   <!-- price title -->
+
+                                   <table border="0" cellpadding="0" cellspeacing="0" width="100%">
+                                    <tr>
+                                        <td valign="top" class="title email-section">
+                                            <h3>Pricing Table</h3>
+                                            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+
+                                        </td>
+                                    </tr>  
+                                </table>
+
+                                <!-- price title -->
+
+                                <!-- price content  -->
+                                <table border="0" cellpadding="0" cellspeacing="0" width="100%" class="email-section">
+                                    <tr>
+                                        <td class="two-column" width="50%" style="padding: 15px;">
+                                            <table  border="1" cellpadding="0" cellspeacing="0" width="100%" style="border-color: #f1c638;border-radius: 5px;"> 
+                                                <tr>
+                                                    <td style="padding: 25px 10px; text-align: center;">
+                                                        <h3>Standard Plan</h3>
+                                                        <p style="margin: 10px 0;">Starting at</p>
+                                                        <h5>$ <span style="font-size: 25px;">150</span>/mos</h5>
+                                                        <p style="margin: 20px 0;"> Single Domain</p>
+                                                        <p style="margin: 20px 0;">10 GB Disk Space</p>
+                                                        <p style="margin: 20px 0;">100 gb disk space</p>
+                                                        <p style="margin: 20px 0;">Free Dedicated IP</p>
+                                                        <a href="#" class="btn btn-yeallow">Purches</a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+
+                                        <td class="two-column" width="50%" style="padding: 15px;">
+                                            <table  border="1" cellpadding="0" cellspeacing="0" width="100%" style="border-color: #f1c638;border-radius: 5px;"> 
+                                                <tr>
+                                                    <td style="padding: 25px 10px; text-align: center;">
+                                                        <h3>Standard Plan</h3>
+                                                        <p style="margin: 10px 0;">Starting at</p>
+                                                        <h5>$ <span style="font-size: 25px;">150</span>/mos</h5>
+                                                        <p style="margin: 20px 0;"> Single Domain</p>
+                                                        <p style="margin: 20px 0;">10 GB Disk Space</p>
+                                                        <p style="margin: 20px 0;">100 gb disk space</p>
+                                                        <p style="margin: 20px 0;">Free Dedicated IP</p>
+                                                        <a href="#" class="btn btn-yeallow">Purches</a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                                <!-- price content  -->
+
+                               </td>
+                           </tr>
+
+                        <!-- price section end -->
+
+                        <!-- footer section start  -->
+
+                        <tr>
+                            <td>
+                                <table  border="0" cellpadding="0" cellspeacing="0" width="100%" class="email-section" style="background: #000;text-align: center;">
+                                    <tr>
+                                        <td> 
+                                           <table  border="0" cellpadding="0" cellspeacing="0" width="100%" style="">
+                                                <tr>
+                                                    <td style="text-align: center;">
+                                                        <p style="font-size: 25px; color: #fafafa;">203 Fake St. Mountain View, San Francisco, California, USA</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: center;">
+                                                        <p style="color: #fafafa;margin: 20px 0;">No longer want to receive these email? You can <a href="#" style="color: #f1c638;"> Unsubscribe here</a></p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <ul style="">
+                                                            <li style="margin: 0 10px;display: inline-block;">
+                                                                <a href="#"> <img src="./images/004-twitter-logo.png" alt="" width="35px;"  style="width: 35px;">  </a>
+                                                            </li>
+                                                            <li style="margin: 0 10px;display: inline-block;">
+                                                                <a href="#"> <img src="./images/005-facebook.png" alt="" width="35px" style="width: 35px;">  </a>
+                                                            </li>
+                                                            <li style="margin: 0 10px;display: inline-block;"> 
+                                                                <a href="#"> <img src="./images/006-instagram-logo.png" alt="" width="35px"  style="width: 35px;">  </a>
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                           </table>
+                                           
+                                            
+                                           
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <!-- footer section end -->
+
+                        
+
+
+                    </table>
+
+                    <!-- email body section  -->
+                </td>
+            </tr>
+
+        </table>
+    
+
+    <!-- full width end -->
+
+</body>
+</html>
